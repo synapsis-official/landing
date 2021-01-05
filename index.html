@@ -97,7 +97,6 @@
           }
       }
       .card-intro {
-          margin-top: 9rem;
       }
       .icon-list li i {
           font-size: 1.5rem;
@@ -168,15 +167,17 @@
 
 <!-- Full Page Intro -->
 <div class="view full-page-intro d-flex"
-     style="background-image: url('img/intro-bg.jpeg'); min-height: 750px;
-     background-repeat: no-repeat; background-size: cover;"
+     style="background-image: url('img/intro-bg.jpeg');
+     background-repeat: no-repeat; background-size: cover; height: auto; min-height: 100%;"
 >
 
   <!-- Mask & flexbox options-->
-  <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+  <div class="mask rgba-black-light d-flex justify-content-center align-items-center"
+       style="position: relative; height: inherit; padding-top: 8rem; padding-bottom: 8rem;"
+  >
 
     <!-- Content -->
-    <div class="container">
+    <div class="container m-auto">
 
       <!--Grid row-->
       <div class="row wow fadeIn card-intro" style="background: rgba(0,23,79,0.31);">
@@ -206,11 +207,10 @@
         <!--Grid column-->
 
         <!--Grid column-->
-        <div class="col-md-6 col-xl-5 mb-4">
-
+        <div class="col-md-6 col-xl-5 mb-4 d-flex">
 
           <!--Card-->
-          <div class="card card-image" style="border-radius: 50%;">
+          <div class="card card-image m-auto" style="border-radius: 50%;">
             <img style="height: 100%; width: 100%;" title="Synaps.is" alt="SYNAPS.IS LOGO" src="img/syis-logo-intro.png">
           </div>
           <!--/.Card-->
