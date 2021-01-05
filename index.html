@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design Bootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.min.css" rel="stylesheet">
+  <style type="text/css">
+      html,
+      body,
+      header,
+      .view {
+          height: 100%;
+      }
+
+      @media (max-width: 740px) {
+          html,
+          body,
+          header,
+          .view {
+              height: 1000px;
+          }
+      }
+
+      @media (min-width: 800px) and (max-width: 850px) {
+          html,
+          body,
+          header,
+          .view {
+              height: 650px;
+          }
+      }
+      @media (min-width: 800px) and (max-width: 850px) {
+          .navbar:not(.top-nav-collapse) {
+              background: #1C2331!important;
+          }
+      }
+      @media (min-width: 800px) {
+          .card-intro {
+              padding: 2rem;
+          }
+      }
+      .icon-list li i {
+          font-size: 1.5rem;
+          margin: 8px;
+      }
+      .icon-list li {
+          line-height: 2;
+      }
+      .card.card-image {
+          background: rgba(255, 255, 255, 0.09);
+      }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">
+      <strong>Synaps.is</strong>
+    </a>
+
+    <!-- Collapse -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <!-- Left -->
+      <ul class="navbar-nav mr-auto"></ul>
+
+      <!-- Right -->
+      <ul class="navbar-nav nav-flex-icons">
+        <li class="nav-item">
+          <a href="https://www.facebook.com/syis.official" class="nav-link" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="https://twitter.com/synaps_is" class="nav-link" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.instagram.com/synaps.is" class="nav-link" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="https://github.com/synapsis-official" class="nav-link border border-light rounded"
+             target="_blank">
+            <i class="fab fa-github mr-2"></i>GitHub
+          </a>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+</nav>
+<!-- Navbar -->
+
+<!-- Full Page Intro -->
+<div class="view full-page-intro" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+  <!-- Mask & flexbox options-->
+  <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+    <!-- Content -->
+    <div class="container">
+
+      <!--Grid row-->
+      <div class="row wow fadeIn card-intro" style="background: rgba(0,23,79,0.31);">
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4 white-text text-center text-md-left">
+
+          <h1 class="display-4 font-weight-bold">Be happy with Synaps.is</h1>
+
+          <hr class="hr-light">
+
+          <h5 class="mt-4 mb-3">
+            <strong>Innovative Solutions</strong>
+          </h5>
+
+          <ul class="mb-4 d-none d-md-block" style="list-style: '✓  '">
+            <li><strong>Interesting technological innovations</strong></li>
+            <li><strong>Speed up the implementation of IT solutions</strong></li>
+            <li><strong>Respects the privacy of users</strong></li>
+          </ul>
+
+          <a href="#main" class="btn btn-red btn-lg mt-5">
+            Read more
+          </a>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 col-xl-5 mb-4">
+
+
+          <!--Card-->
+          <div class="card card-image" style="border-radius: 50%;">
+            <img title="Synaps.is" alt="SYNAPS.IS LOGO" src="img/logo_S_Colored_Circle.png">
+
+          </div>
+          <!--/.Card-->
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+    </div>
+    <!-- Content -->
+
+  </div>
+  <!-- Mask & flexbox options-->
+
+</div>
+<!-- Full Page Intro -->
+
+<!--Main layout-->
+<main id="main" style="padding-top: 0.01px !important">
+  <div class="container" style="max-width: 95vw; margin-top: 4rem;">
+
+    <!--Section: Services-->
+    <section>
+
+      <h2 class="my-4 h3 text-center">Services</h2>
+
+      <div class="d-flex">
+
+        <div class="m-auto col-lg-10 col-md-12">
+
+          <!--First row-->
+          <div class="row features-small mt-4 wow fadeIn d-flex">
+
+            <!--Grid column-->
+            <div class="col-xl-3 col-lg-6 m-auto">
+              <!--Grid row-->
+              <div class="row">
+                <div class="col-2">
+                  <i class="fas fa-key fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                </div>
+                <div class="col-10 mb-2 pl-3">
+                  <a title="Synaps.is Auth" href="#!">
+                    <h5 class="feature-title font-bold mb-1 indigo-text">Synaps.is Auth</h5>
+                  </a>
+                  <p class="grey-text mt-2">
+                    Skip implementation of authentication, thanks to <b>state of the art</b> integration methods!
+                  </p>
+                </div>
+              </div>
+              <!--/Grid row-->
+            </div>
+            <!--/Grid column-->
+          </div>
+          <!--/First row-->
+
+        </div>
+
+      </div>
+
+    </section>
+    <!--Section: Services-->
+
+    <hr class="my-5">
+
+    <!--Section: Main info-->
+    <section class="mt-5 wow fadeIn">
+
+      <!--Grid row-->
+      <div class="row justify-content-md-center">
+
+        <!--Grid column-->
+        <div class="col-md-4 mb-4">
+
+          <img src="img/repositories.png" style="max-height: 355px;" class="img-fluid" alt="">
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4 pt-5 pl-4">
+
+          <!-- Main heading -->
+          <h3 class="h3 mb-3">Repositories</h3>
+          <p>Synaps.is will provide many <b>open source</b> integration libraries, so we have been set up some repositories.</p>
+          <!-- Main heading -->
+
+          <hr>
+
+          <ul class="icon-list" style="list-style: none;">
+            <li>
+              <a href="https://hub.docker.com/u/syis" target="_blank">
+                <strong><i class="fab fa-docker"></i> <span>Docker Hub</span></strong>
+              </a>
+            </li>
+            <li>
+              <a href="https://pypi.org/user/syis" target="_blank">
+                <strong><i class="fab fa-python"></i> <span style="margin-left: 8px;">Python Package Index</span></strong>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.npmjs.com/org/syis" target="_blank">
+                <strong><i class="fab fa-js"></i> <span style="margin-left: 8px;">Node package manager</span></strong>
+              </a>
+            </li>
+            <!--
+            <li>
+              <a href="https://packagist.org/syis" target="_blank">
+                <strong><i class="fab fa-php"></i> Packagist</strong>
+              </a>
+            </li>
+            -->
+          </ul>
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+    </section>
+    <!--Section: Main info-->
+
+    <hr class="my-5">
+
+    <!--Section: Main features & Quick Start-->
+    <section>
+
+      <h3 class="h3 text-center mb-5">About Synaps.is</h3>
+
+      <!--Grid row-->
+      <div class="row wow fadeIn d-flex">
+
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 px-4 m-auto">
+
+          <!--First row-->
+          <div class="row">
+            <div class="col-1 mr-3">
+              <i class="fab fa-connectdevelop fa-2x indigo-text"></i>
+            </div>
+            <div class="col-10">
+              <h5 class="feature-title">Microservices</h5>
+              <p class="grey-text">The microservices architecture guarantees maintainability.</p>
+            </div>
+          </div>
+          <!--/First row-->
+
+          <div style="height:30px"></div>
+
+          <!--Second row-->
+          <div class="row">
+            <div class="col-1 mr-3">
+              <i class="fas fa-book fa-2x blue-text"></i>
+            </div>
+            <div class="col-10">
+              <h5 class="feature-title">Documentation</h5>
+              <p class="grey-text">A simple documentation will help you to easily integrate our services.
+              </p>
+            </div>
+          </div>
+          <!--/Second row-->
+
+          <div style="height:30px"></div>
+
+        </div>
+        <!--/Grid column-->
+
+      </div>
+      <!--/Grid row-->
+
+    </section>
+    <!--Section: Main features & Quick Start-->
+
+  </div>
+</main>
+<!--Main layout-->
+
+<!--Footer-->
+<footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+  <hr class="my-4">
+
+  <!-- Social icons -->
+  <div class="pb-4">
+    <a href="https://www.facebook.com/syis.official" target="_blank">
+      <i class="fab fa-facebook-f mr-3"></i>
+    </a>
+
+    <a href="https://twitter.com/synaps_is" target="_blank">
+      <i class="fab fa-twitter mr-3"></i>
+    </a>
+
+    <a href="https://www.instagram.com/synaps.is/" target="_blank">
+      <i class="fab fa-instagram mr-3"></i>
+    </a>
+
+    <a href="https://github.com/synapsis-official" target="_blank">
+      <i class="fab fa-github mr-3"></i>
+    </a>
+
+    <a href="https://hub.docker.com/u/syis" target="_blank">
+      <i class="fab fa-docker mr-3"></i>
+    </a>
+
+    <a href="https://pypi.org/user/syis" target="_blank">
+      <i class="fab fa-python mr-3"></i>
+    </a>
+
+    <a href="https://www.npmjs.com/org/syis" target="_blank">
+      <i class="fab fa-js mr-3"></i>
+    </a>
+
+    <a href="https://codepen.io/syis" target="_blank">
+      <i class="fab fa-codepen mr-3"></i>
+    </a>
+  </div>
+  <!-- Social icons -->
+
+  <!--Copyright-->
+  <div class="footer-copyright py-3">
+    © 2021 Copyright:
+    <a href="https://fabrizio.fubelli.org/" target="_blank"> Fabrizio Fubelli </a>
+  </div>
+  <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- Initializations -->
+<script type="text/javascript">
+  // Animations initialization
+  new WOW().init();
+</script>
+</body>
+
+</html>
