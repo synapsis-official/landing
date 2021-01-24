@@ -73,16 +73,6 @@
           height: auto;
       }
 
-      @media (min-width: 800px) {
-          .card-intro {
-              padding: 2rem;
-          }
-      }
-      @media (max-width: 575px) {
-          .card-intro {
-              background: transparent !important;
-          }
-      }
       @media (max-width: 640px) {
           #img-intro {
               max-width: 100vw;
@@ -92,6 +82,21 @@
           #img-intro {
               max-width: 640px;
           }
+      }
+      #img-example {
+          width: 500px;
+      }
+      @media (min-width: 768px) {
+          #img-example {
+              max-width: 45vw;
+          }
+      }
+      @media (max-width: 767px) {
+          #img-example {
+              max-width: 90vw;
+          }
+      }
+      @media (max-width: 767px) {
       }
       #separator-intro {
           position: absolute;
@@ -124,8 +129,11 @@
       .icon-list li {
           line-height: 2;
       }
-      .card.card-image {
-          background: rgba(255, 255, 255, 0.09);
+      h1 {
+          font-size: 3.5rem !important;
+      }
+      #features li {
+          padding-bottom: 2rem;
       }
   </style>
 </head>
@@ -141,157 +149,57 @@
       <div class="separator-intro-side separator-right"></div>
     </div>
   </div>
-
-
-
-  <div class="row" style="z-index: 3; background: white; position: relative; padding-top: 3rem;">
-
-    <!-- Content -->
-    <div class="container m-auto">
-
-      <!--Grid row-->
-      <div class="row wow fadeIn card-intro" style="background: rgba(0,23,79,0.31);">
-
-        <!--Grid column-->
-        <div class="col-md-6 mb-4 white-text text-center text-md-left">
-
-          <h1 class="display-4 font-weight-bold">Be happy with Synaps.is</h1>
-
-          <hr class="hr-light">
-
-          <h5 class="mt-4 mb-3">
-            <strong>Innovative Solutions</strong>
-          </h5>
-
-          <ul class="mb-4 d-md-block" style="list-style: '✓  '; text-align: left;">
-            <li><strong>Interesting technological innovations</strong></li>
-            <li><strong>Speed up the implementation of IT solutions</strong></li>
-            <li><strong>Respects the privacy of users</strong></li>
-          </ul>
-
-          <a href="#main" class="btn btn-blue btn-lg mt-5">
-            Read more
-          </a>
-
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-md-6 col-xl-5 mb-4 d-flex">
-
-          <!--Card-->
-          <div class="card card-image m-auto" style="border-radius: 50%;">
-            <img style="height: 100%; width: 100%;" title="Synaps.is" alt="SYNAPS.IS LOGO" src="img/logo/blue/syis-logo-intro.png">
-          </div>
-          <!--/.Card-->
-
-        </div>
-        <!--Grid column-->
-
-      </div>
-      <!--Grid row-->
-
-    </div>
-    <!-- Content -->
-
-  </div>
-  <!-- Mask & flexbox options-->
 </div>
 
 <!--Main layout-->
 <main id="main" style="padding-top: 0.01px !important">
   <div class="container" style="max-width: 95vw; margin-top: 4rem;">
 
-    <!--Section: Services-->
-    <section>
+    <!--Section: Explanation-->
+    <section class="pb-4">
 
-      <h2 class="my-4 h3 text-center">Services</h2>
+      <h1 class="my-4 h1 text-center">Synaps.is</h1>
 
-      <div class="d-flex">
-
-        <div class="m-auto col-lg-10 col-md-12">
-
-          <!--First row-->
-          <div class="row features-small mt-4 wow fadeIn d-flex">
-
-            <!--Grid column-->
-            <div class="col-xl-3 col-lg-6 m-auto">
-              <!--Grid row-->
-              <div class="row">
-                <div class="col-2">
-                  <i class="fas fa-key fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-                </div>
-                <div class="col-10 mb-2 pl-3">
-                  <a title="Synaps.is Auth" href="#!">
-                    <h5 class="feature-title font-bold mb-1 indigo-text">Synaps.is Auth</h5>
-                  </a>
-                  <p class="grey-text mt-2">
-                    Skip implementation of authentication, thanks to <b>state of the art</b> integration methods!
-                  </p>
-                </div>
-              </div>
-              <!--/Grid row-->
-            </div>
-            <!--/Grid column-->
-          </div>
-          <!--/First row-->
-
-        </div>
-
-      </div>
-
-    </section>
-    <!--Section: Services-->
-
-    <hr class="my-5">
-
-    <!--Section: Main info-->
-    <section class="mt-5 wow fadeIn">
+      <h2 class="text-center h2" style="font-weight: inherit; margin-bottom: 5rem; margin-top: 4rem;">
+        THE FIRST ANONYMOUS SEARCH ENGINE FOR SOCIAL NETWORKS
+      </h2>
 
       <!--Grid row-->
       <div class="row justify-content-md-center">
 
         <!--Grid column-->
-        <div class="col-md-4 mb-4">
-
-          <img alt="REPOSITORY LOGOS" title="Repository Logos" src="img/syis-repositories.png" style="max-height: 355px;" class="img-fluid">
-
+        <div class="col-md-5 mb-4 text-center">
+          <img id="img-example" alt="EXAMPLE" src="img/2-syis-example.gif" title="Example" class="img-fluid">
         </div>
         <!--Grid column-->
 
         <!--Grid column-->
-        <div class="col-md-6 mb-4 pt-5 pl-4">
+        <div class="col-md-7 mb-4 pl-4" style="font-size: 1.5rem;">
 
-          <!-- Main heading -->
-          <h3 class="h3 mb-3">Repositories</h3>
-          <p>Synaps.is will provide many <b>open source</b> integration libraries, so we have been set up some repositories.</p>
-          <!-- Main heading -->
+          <ul id="features" class="icon-list p-0" style="list-style: none;">
 
-          <hr>
+            <li>
+              <h3 style="color: #b00000;"><i class="fas fa-user-friends"></i> <span>Find people by their interests</span></h3>
+              <p>
+                Synaps.is will find for you the right person to speak about everything you want.
+              </p>
+            </li>
 
-          <ul class="icon-list" style="list-style: none;">
             <li>
-              <a href="https://hub.docker.com/u/syis" rel="noreferrer" target="_blank">
-                <strong><i class="fab fa-docker"></i> <span>Docker Hub</span></strong>
-              </a>
+              <h3 style="color: #312a2a;"><i class="fas fa-user-secret"></i> <span>&nbsp;&nbsp;Fully anonymous</span></h3>
+              <p>
+                The powerful of a social network and the features of a search engine, in a completely
+                anonymous context.
+              </p>
             </li>
+
             <li>
-              <a href="https://pypi.org/user/syis" rel="noreferrer" target="_blank">
-                <strong><i class="fab fa-python"></i> <span style="margin-left: 8px;">Python Package Index</span></strong>
-              </a>
+              <h3 style="color: #14147b;"><i class="fas fa-shield-alt"></i> <span>&nbsp;Monitored by A.I.</span></h3>
+              <p>
+                Thanks to an integrated Artificial Intelligence it detects dangerous chats and warns you about the risks.
+              </p>
             </li>
-            <li>
-              <a href="https://www.npmjs.com/org/syis" rel="noreferrer" target="_blank">
-                <strong><i class="fab fa-js"></i> <span style="margin-left: 8px;">Node package manager</span></strong>
-              </a>
-            </li>
-            <!--
-            <li>
-              <a href="https://packagist.org/syis" rel="noreferrer" target="_blank">
-                <strong><i class="fab fa-php"></i> Packagist</strong>
-              </a>
-            </li>
-            -->
+
           </ul>
 
         </div>
@@ -303,9 +211,7 @@
     </section>
     <!--Section: Main info-->
 
-    <hr class="my-5">
-
-    <!--Section: Main features & Quick Start-->
+    <!--Section: Stay connected-->
     <section>
 
       <h3 class="h3 text-center mb-5">About Synaps.is</h3>
@@ -359,23 +265,7 @@
 <!--Main layout-->
 
 <!--Footer-->
-<footer class="page-footer text-center font-small mt-4 wow fadeIn">
-
-  <hr class="my-4">
-
-  <!-- Social icons -->
-  <div class="pb-4">
-
-    <a href="https://github.com/synapsis-official" rel="noreferrer" target="_blank">
-      <i class="fab fa-github mr-3"></i>
-    </a>
-
-    <a href="https://hub.docker.com/u/syis" rel="noreferrer" target="_blank">
-      <i class="fab fa-docker mr-3"></i>
-    </a>
-
-  </div>
-  <!-- Social icons -->
+<footer class="page-footer text-center font-small mt-4 fadeIn">
 
   <!--Copyright-->
   <div class="footer-copyright py-3">
