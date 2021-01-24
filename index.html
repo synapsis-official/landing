@@ -219,45 +219,25 @@
     <!--Section: Stay connected-->
     <section style="background-color: #ececec; padding-top: 5rem; padding-bottom: 5rem;">
 
-      <h3 class="h3 text-center mb-5">About Synaps.is</h3>
+      <h3 class="h3 text-center mb-3">STAY CONNECTED</h3>
+      <h5 class="text-center mb-5">Become a beta tester by trying the first releases!</h5>
 
       <!--Grid row-->
       <div class="row wow fadeIn d-flex">
 
-        <!--Grid column-->
-        <div class="col-lg-6 col-md-12 px-4 m-auto">
+        <form id="stay-connected-form" name="stay-connected-form" class="text-center p-5 m-auto"
+              action="https://cloud.synaps.is/auth/v1/" method="POST"
+              style="max-width: 500px; width: 100%;">
 
-          <!--First row-->
-          <div class="row">
-            <div class="col-1 mr-3">
-              <i class="fab fa-connectdevelop fa-2x indigo-text"></i>
-            </div>
-            <div class="col-10">
-              <h5 class="feature-title">Microservices</h5>
-              <p class="grey-text">The microservices architecture guarantees maintainability.</p>
-            </div>
-          </div>
-          <!--/First row-->
+          <p class="h4 mb-4">Sign in</p>
 
-          <div style="height:30px"></div>
+          <!-- Email -->
+          <input type="email" id="email" name="email" class="form-control mb-4" placeholder="E-mail">
 
-          <!--Second row-->
-          <div class="row">
-            <div class="col-1 mr-3">
-              <i class="fas fa-book fa-2x blue-text"></i>
-            </div>
-            <div class="col-10">
-              <h5 class="feature-title">Documentation</h5>
-              <p class="grey-text">A simple documentation will help you to easily integrate our services.
-              </p>
-            </div>
-          </div>
-          <!--/Second row-->
+          <!-- Sign in button -->
+          <button class="btn btn-info btn-block my-4" type="submit">LET ME KNOW</button>
 
-          <div style="height:30px"></div>
-
-        </div>
-        <!--/Grid column-->
+        </form>
 
       </div>
       <!--/Grid row-->
@@ -273,7 +253,7 @@
   <!--Copyright-->
   <div class="footer-copyright py-3">
     © 2021 Copyright:
-    <a href="https://fabrizio.fubelli.org/" rel="noreferrer" target="_blank"> Synaps.is </a>
+    <a href="#" style="pointer-events: none;"> Synaps.is </a>
   </div>
   <!--/.Copyright-->
 
