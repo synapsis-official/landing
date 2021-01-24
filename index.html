@@ -73,26 +73,6 @@
           height: auto;
       }
 
-      @media (max-width: 740px) {
-          html,
-          header,
-          .view {
-              height: 1000px;
-          }
-      }
-
-      @media (min-width: 800px) and (max-width: 850px) {
-          html,
-          header,
-          .view {
-              height: 650px;
-          }
-      }
-      @media (min-width: 800px) and (max-width: 850px) {
-          .navbar:not(.top-nav-collapse) {
-              background: #1C2331!important;
-          }
-      }
       @media (min-width: 800px) {
           .card-intro {
               padding: 2rem;
@@ -103,12 +83,39 @@
               background: transparent !important;
           }
       }
-      @media (max-width: 630px) {
+      @media (max-width: 640px) {
           #img-intro {
               max-width: 100vw;
           }
       }
-      .card-intro {
+      @media (min-width: 641px) {
+          #img-intro {
+              max-width: 640px;
+          }
+      }
+      #separator-intro {
+          position: absolute;
+          z-index: 2;
+          width: 100%;
+          height: 14vw;
+          bottom: 0;
+      }
+      #separator-intro .separator-intro-side {
+          background: white;
+          height: 100%;
+          width: 50%;
+          position: absolute;
+          bottom: 0;
+      }
+      #separator-intro .separator-left {
+          transform: skewy(14deg);
+          transform-origin: bottom left;
+          left: 0;
+      }
+      #separator-intro .separator-right {
+          transform: skewy(-14deg);
+          transform-origin: bottom right;
+          right: 0;
       }
       .icon-list li i {
           font-size: 1.5rem;
@@ -127,71 +134,69 @@
 
 <!-- Full Page Intro -->
 <div class="view full-page-intro">
-  <div class="row">
-    <img id="img-intro" class="m-auto py-5 my-5" style="max-height: 120vh;" src="img/1-syis-Intro.gif" alt="INTRO_IMG" title="Anonymized Network">
+  <div class="row" style="position: relative;">
+    <img id="img-intro" class="m-auto pt-5 mt-5" style="max-height: 120vh;" src="img/1-syis-Intro.gif" alt="INTRO_IMG" title="Anonymized Network">
+    <div id="separator-intro">
+      <div class="separator-intro-side separator-left"></div>
+      <div class="separator-intro-side separator-right"></div>
+    </div>
   </div>
 
 
-  <div class="row">
-    <!-- Mask & flexbox options-->
-    <div class="mask rgba-black-light d-flex justify-content-center align-items-center"
-         style="position: relative; height: inherit; padding-top: 8rem; padding-bottom: 8rem;"
-    >
 
-      <!-- Content -->
-      <div class="container m-auto">
+  <div class="row" style="z-index: 3; background: white; position: relative; padding-top: 3rem;">
 
-        <!--Grid row-->
-        <div class="row wow fadeIn card-intro" style="background: rgba(0,23,79,0.31);">
+    <!-- Content -->
+    <div class="container m-auto">
 
-          <!--Grid column-->
-          <div class="col-md-6 mb-4 white-text text-center text-md-left">
+      <!--Grid row-->
+      <div class="row wow fadeIn card-intro" style="background: rgba(0,23,79,0.31);">
 
-            <h1 class="display-4 font-weight-bold">Be happy with Synaps.is</h1>
+        <!--Grid column-->
+        <div class="col-md-6 mb-4 white-text text-center text-md-left">
 
-            <hr class="hr-light">
+          <h1 class="display-4 font-weight-bold">Be happy with Synaps.is</h1>
 
-            <h5 class="mt-4 mb-3">
-              <strong>Innovative Solutions</strong>
-            </h5>
+          <hr class="hr-light">
 
-            <ul class="mb-4 d-md-block" style="list-style: '✓  '; text-align: left;">
-              <li><strong>Interesting technological innovations</strong></li>
-              <li><strong>Speed up the implementation of IT solutions</strong></li>
-              <li><strong>Respects the privacy of users</strong></li>
-            </ul>
+          <h5 class="mt-4 mb-3">
+            <strong>Innovative Solutions</strong>
+          </h5>
 
-            <a href="#main" class="btn btn-blue btn-lg mt-5">
-              Read more
-            </a>
+          <ul class="mb-4 d-md-block" style="list-style: '✓  '; text-align: left;">
+            <li><strong>Interesting technological innovations</strong></li>
+            <li><strong>Speed up the implementation of IT solutions</strong></li>
+            <li><strong>Respects the privacy of users</strong></li>
+          </ul>
 
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-md-6 col-xl-5 mb-4 d-flex">
-
-            <!--Card-->
-            <div class="card card-image m-auto" style="border-radius: 50%;">
-              <img style="height: 100%; width: 100%;" title="Synaps.is" alt="SYNAPS.IS LOGO" src="img/logo/blue/syis-logo-intro.png">
-            </div>
-            <!--/.Card-->
-
-          </div>
-          <!--Grid column-->
+          <a href="#main" class="btn btn-blue btn-lg mt-5">
+            Read more
+          </a>
 
         </div>
-        <!--Grid row-->
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 col-xl-5 mb-4 d-flex">
+
+          <!--Card-->
+          <div class="card card-image m-auto" style="border-radius: 50%;">
+            <img style="height: 100%; width: 100%;" title="Synaps.is" alt="SYNAPS.IS LOGO" src="img/logo/blue/syis-logo-intro.png">
+          </div>
+          <!--/.Card-->
+
+        </div>
+        <!--Grid column-->
 
       </div>
-      <!-- Content -->
+      <!--Grid row-->
 
     </div>
-    <!-- Mask & flexbox options-->
-  </div>
+    <!-- Content -->
 
+  </div>
+  <!-- Mask & flexbox options-->
 </div>
-<!-- Full Page Intro -->
 
 <!--Main layout-->
 <main id="main" style="padding-top: 0.01px !important">
