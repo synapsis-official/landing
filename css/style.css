@@ -96,6 +96,12 @@ header,
     padding-left: 2rem;
     padding-right: 2rem;
   }
+  h2.h1 {
+    font-size: 2rem !important;
+  }
+  .h1 {
+    font-size: 2.4rem !important;
+  }
 }
 
 .row {
@@ -117,7 +123,7 @@ h1 {
   font-size: 3.5rem !important;
 }
 h1, .h1 {
-  color: #0ba;
+  color: #00ffe8;
 }
 
 .view {
@@ -141,4 +147,16 @@ section.section-secondary {
 
 #main {
   min-height: calc(100vh - 400px);
+}
+
+.rgba-black {
+  background-color: rgba(53, 53, 53, 0.55);
+}
+
+.syis-text {
+  color: #00ffe8;
+}
+
+.syis-dark-text {
+  color: #0064c0;
 }
