@@ -25,6 +25,12 @@ body,
 /* Navbar animation */
 .navbar {
   background-color: rgba(0, 0, 0, 0.3); }
+.nav-link {
+  font-weight: bolder;
+}
+.navbar-brand {
+  font-weight: bold;
+}
 
 .top-nav-collapse {
   background-color: #1C2331; }
