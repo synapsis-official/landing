@@ -92,13 +92,19 @@
           #img-example {
               max-width: 45vw;
           }
+          .col-center .col {
+              padding-left: 5rem;
+              padding-right: 5rem;
+          }
       }
       @media (max-width: 767px) {
           #img-example {
               max-width: 90vw;
           }
-      }
-      @media (max-width: 767px) {
+          .col-center .col {
+              padding-left: 2rem;
+              padding-right: 2rem;
+          }
       }
       #intro {
           padding-top: 9rem;
@@ -114,7 +120,7 @@
       #separator-intro .separator-intro-side {
           background: white;
           height: 100%;
-          width: 50%;
+          width: 51%;
           position: absolute;
           bottom: 0;
       }
@@ -137,6 +143,8 @@
       }
       h1 {
           font-size: 3.5rem !important;
+      }
+      h1, .h1 {
           color: #0ba;
       }
       #features li {
@@ -149,6 +157,14 @@
       }
       .card.card-image {
           background: rgba(255, 255, 255, 0.09);
+      }
+      section.section-secondary {
+          background-color: #ececec;
+          padding-top: 5rem;
+          padding-bottom: 5rem;
+      }
+      #features-table h5 {
+          padding-top: 1.5rem;
       }
   </style>
 </head>
@@ -179,7 +195,12 @@
       <!-- Right -->
       <ul class="navbar-nav nav-flex-icons">
         <li class="nav-item">
-          <a href="about" rel="noreferrer" class="nav-link">
+          <a href="./" class="nav-link">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="about" class="nav-link">
             About
           </a>
         </li>
@@ -213,27 +234,70 @@
 <!--Main layout-->
 <main id="main">
 
-    <!--Section: Explanation-->
-    <section class="pb-4">
+  <!--Section: Intro-->
+  <section class="pb-5">
 
-      <!--
-      <h1 class="my-4 h1 text-center">Synaps.is</h1>
-      -->
+    <!--
+    <h1 class="my-4 h1 text-center">Synaps.is</h1>
+    -->
 
-      <div class="row">
+    <div class="row col-center">
 
-        <div class="col-md-6">
+      <div class="col col-12 col-lg-6 pt-4">
+        <h2 class="h1">Find people to chat, based on your interests or needs</h2>
+        <br/>
+        <table id="features-table">
+          <tbody>
+          <tr>
+            <td class="px-3">
+              <h5><i class="fas fa-search"></i></h5>
+            </td>
+            <td>
+              <h5>Look for your current interests or needs in a <b>search engine</b></h5>
+            </td>
+          </tr>
+          <tr>
+            <td class="px-3">
+              <h5><i class="fas fa-bell"></i></h5>
+            </td>
+            <td>
+              <h5>Thanks to a <b>notification system</b>, Synaps.is finds the best person matching your search and
+                connect you with him</h5>
+            </td>
+          </tr>
+          <tr>
+            <td class="px-3">
+              <h5><i class="fas fa-user-secret"></i></h5>
+            </td>
+            <td>
+              <h5>This service if  <b>Fully Anonymous</b>. The only information that the other people will know about you,
+                is a probable interest about something</h5>
+            </td>
+          </tr>
+          <tr>
+            <td class="px-3">
+              <h5><i class="fas fa-shield-alt"></i></h5>
+            </td>
+            <td>
+              <h5>An <b>Artificial Intelligence</b> monitors the chats, to make Synaps.is more secure</h5>
+            </td>
+          </tr>
+          </tbody>
+        </table>
 
-        </div>
+      </div>
 
-        <div class="col-md-6">
-          <h3 class="h3 text-center mb-3">STAY CONNECTED</h3>
-          <h5 class="text-center">Become a beta tester by trying the first release!</h5>
+
+      <div class="col col-12 col-lg-6 pt-4 d-flex">
+        <div class="m-auto">
+          <h3 class="h3 my-3">STAY CONNECTED</h3>
+          <h5 class="">We can mail you when the first release is ready.</h5>
+          <h5 class="">Than, you can become a <b>beta tester</b> by trying our platform.</h5>
 
           <!--Grid row-->
-          <div class="row wow fadeIn d-flex">
+          <div class="row wow fadeIn">
 
-            <form id="stay-connected-form" name="stay-connected-form" class="text-center p-5 m-auto"
+            <form id="stay-connected-form" name="stay-connected-form" class="text-center py-3"
                   action="#" method="POST"
                   style="max-width: 500px; width: 100%;">
 
@@ -241,6 +305,10 @@
 
               <!-- Email -->
               <input type="email" id="email" name="email" class="form-control mb-4" placeholder="E-mail">
+
+              <p>
+                By sending your email, you accept our <a href="privacy" title="Privacy Policy">Privacy Policy</a>
+              </p>
 
               <!-- Sign in button -->
               <button class="btn btn-info btn-block mt-4" type="submit">LET ME KNOW</button>
@@ -253,64 +321,38 @@
 
       </div>
 
-      <h2 class="text-center h2" style="font-weight: inherit; margin-bottom: 5rem; margin-top: 4rem;">
-        THE FIRST ANONYMOUS SEARCH ENGINE FOR SOCIAL NETWORKS
-      </h2>
+    </div>
+  </section>
+  <!--Section: Intro-->
 
-      <!--Grid row-->
-      <div class="row justify-content-md-center" style="margin: 0 !important;">
 
-        <!--Grid column-->
-        <div class="col-md-5 mb-4 text-center">
-          <img id="img-example" alt="EXAMPLE" src="img/2-syis-example.gif" title="Example" class="img-fluid">
-        </div>
-        <!--Grid column-->
+  <!--Section: Explanation-->
+  <section class="section-secondary">
 
-        <!--Grid column-->
-        <div class="col-md-7 mb-4 pl-4" style="font-size: 1.5rem;">
+    <!--Grid row-->
+    <div class="row justify-content-md-center" style="margin: 0 !important;">
 
-          <ul id="features" class="icon-list p-0" style="list-style: none;">
-
-            <li>
-              <h3 style="color: #b00000;"><i class="fas fa-user-friends"></i> <span>Find people by their interests</span></h3>
-              <p>
-                Synaps.is will find for you the right person to speak about everything you want.
-              </p>
-            </li>
-
-            <li>
-              <h3 style="color: #312a2a;"><i class="fas fa-user-secret"></i> <span>&nbsp;&nbsp;Fully anonymous</span></h3>
-              <p>
-                The powerful of a social network and the features of a search engine, in a completely
-                anonymous context.
-              </p>
-            </li>
-
-            <li>
-              <h3 style="color: #14147b;"><i class="fas fa-shield-alt"></i> <span>&nbsp;Monitored by A.I.</span></h3>
-              <p>
-                Thanks to an integrated Artificial Intelligence it detects dangerous chats and warns you about the risks.
-              </p>
-            </li>
-
-          </ul>
-
-        </div>
-        <!--Grid column-->
-
+      <!--Grid column-->
+      <div class="col-md-5 mb-4 text-center">
+        <img id="img-example" alt="EXAMPLE" src="img/2-syis-example.gif" title="Example" class="img-fluid">
       </div>
-      <!--Grid row-->
+      <!--Grid column-->
 
-    </section>
-    <!--Section: Explanation-->
+    </div>
+    <!--Grid row-->
 
-    <!--Section: Stay connected-->
-    <section style="background-color: #ececec; padding-top: 5rem; padding-bottom: 5rem;">
+  </section>
+  <!--Section: Explanation-->
 
 
 
-    </section>
-    <!--Section: Stay connected-->
+  <!--Section: -->
+  <section class="section-secondary">
+
+  </section>
+  <!--Section: -->
+
+
 </main>
 <!--Main layout-->
 
