@@ -43,3 +43,7 @@ body,
 /* Footer color for sake of consistency with Navbar */
 .page-footer {
   background-color: #1C2331; }
+
+#how-to .stepper-vertical li .step-content p {
+  font-size: 1rem;
+}
