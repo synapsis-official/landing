@@ -83,3 +83,58 @@ header,
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+
+
+@media (min-width: 768px) {
+  .col-center .col {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media (max-width: 767px) {
+  .col-center .col {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.light-blue-bg {
+  background-color: #f0fffb;
+}
+.icon-list li i {
+  font-size: 1.5rem;
+  margin: 8px;
+}
+.icon-list li {
+  line-height: 2;
+}
+h1 {
+  font-size: 3.5rem !important;
+}
+h1, .h1 {
+  color: #0ba;
+}
+
+.view {
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+a:not([href]) {
+  pointer-events: none;
+}
+
+.card.card-image {
+  background: rgba(255, 255, 255, 0.09);
+}
+
+section.section-secondary {
+  background-color: #f9f9f9;
+}
