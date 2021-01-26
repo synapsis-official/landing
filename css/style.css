@@ -122,9 +122,6 @@ header,
 h1 {
   font-size: 3.5rem !important;
 }
-h1, .h1 {
-  color: #00ffe8;
-}
 
 .view {
   height: auto;
