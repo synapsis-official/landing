@@ -133,6 +133,9 @@ h1 {
 a:not([href]) {
   pointer-events: none;
 }
+a[href].syis-text:hover {
+  color: #96ffb5;
+}
 
 .card.card-image {
   background: rgba(255, 255, 255, 0.09);
