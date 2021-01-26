@@ -67,6 +67,13 @@
               max-width: 180px;
           }
       }
+
+      #brain-sync-img {
+          width: 280px;
+          border-radius: 5%;
+          max-width: 90%;
+          padding-top: 3rem;
+      }
       #img-example {
           width: 500px;
           border-radius: 5%;
@@ -125,11 +132,16 @@
       #features-table h5 {
           padding-top: 1.5rem;
       }
-      #ready {
-          background-image: url('img/neural-network.jpg');
+      #ready, #collaboration {
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center;
+      }
+      #ready {
+          background-image: url('img/neural-network.jpg');
+      }
+      #collaboration {
+          background-image: url('img/collaboration-bg.jpg');
       }
   </style>
 </head>
@@ -294,116 +306,17 @@
   <!--Section: Intro-->
 
 
-  <!--Section: How it works-->
-  <section id="how-it-works" class="section-secondary" style="padding-top: 5rem; padding-bottom: 4rem;">
-
-    <!--Grid row-->
-    <div class="row col-center" style="margin: 0 !important;">
-
-      <!--Grid column-->
-      <div class="col-12 col-lg-7 mb-4 wow fadeIn">
-        <h2 class="h2 text-center">How it works</h2>
-
-        <!-- Vertical Steppers -->
-        <div class="row mt-1 d-flex">
-
-          <div class="m-auto">
-            <!-- Steppers Wrapper -->
-            <ul class="stepper stepper-vertical">
-
-              <!-- First Step -->
-              <li class="completed">
-                <a>
-                  <span class="circle">1</span>
-                  <span class="label">Search interests or needs</span>
-                </a>
-
-                <!-- Section Description -->
-                <div class="step-content p-0">
-                  <p>
-                    A simple search engine allows you to search for interests or needs
-                  </p>
-                </div>
-              </li>
-
-              <!-- Second Step -->
-              <li class="completed">
-
-                <!--Section Title -->
-                <a>
-                  <span class="circle">2</span>
-                  <span class="label">Chat</span>
-                </a>
-
-                <!-- Section Description -->
-                <div class="step-content p-0">
-                  <p>
-                    The best suited and available person gets temporary connected with you.
-                    This process is called <b>"Synapse"</b>
-                  </p>
-                </div>
-              </li>
-
-            </ul>
-            <!-- /.Steppers Wrapper -->
-
-            <h5 class="px-4">
-              Or...
-            </h5>
-
-            <!-- Steppers Wrapper -->
-            <ul class="stepper stepper-vertical">
-
-              <!-- First Step -->
-              <li class="completed">
-                <a>
-                  <span class="circle">1</span>
-                  <span class="label">Click on notification</span>
-                </a>
-
-                <!-- Section Description -->
-                <div class="step-content p-0">
-                  <p>
-                    You could receive notifications to chat about your interests with someone
-                  </p>
-                </div>
-              </li>
-
-              <!-- Second Step -->
-              <li class="completed">
-
-                <!--Section Title -->
-                <a>
-                  <span class="circle">2</span>
-                  <span class="label">Chat</span>
-                </a>
-
-                <!-- Section Description -->
-                <div class="step-content p-0">
-                  <p>
-                    A person who wants to speak about your interests gets temporary connected with you
-                  </p>
-                </div>
-              </li>
-
-            </ul>
-            <!-- /.Steppers Wrapper -->
-
-          </div>
-
-        </div>
-      </div>
-
-      <div class="col-12 col-lg-5 mb-4 text-center d-flex wow fadeIn">
-        <img id="img-example" alt="EXAMPLE" src="img/2-syis-example.gif" title="Example" class="img-fluid m-auto">
-      </div>
-      <!--Grid column-->
-
+  <!--Section: Collaboration-->
+  <section id="collaboration" class="section-secondary" style="padding-top: 5rem; padding-bottom: 4rem;">
+    <div class="row mx-5 d-flex">
+      <h1 class="h1 m-auto azure-text text-center">Easy online collaboration</h1>
     </div>
-    <!--Grid row-->
+    <div class="row mx-5 d-flex">
+      <img id="brain-sync-img" class="m-auto" src="img/brain-sync.png" alt="Brain Synchronization" title="Brain Synchronization">
+    </div>
 
   </section>
-  <!--Section: Explanation-->
+  <!--Section: Collaboration-->
 
   <section style="padding-bottom: 5rem;">
     <div class="container" style="padding-top: 5rem;">
@@ -428,7 +341,8 @@
     <div class="mask rgba-black" style="padding-top: 5rem; padding-bottom: 5rem;">
       <h2 class="h1 text-center syis-text">Become the first</h2>
       <h5 class="text-center mt-5 px-4 white-text">
-        <a href="#stay-connected" class="syis-text"><b>Stay connected</b></a> to receive the <b>beta</b> version of <b>Synaps.is APP</b>
+        <a href="#stay-connected" class="syis-text"><b>Stay connected</b></a>
+        to receive the <b>beta</b> version of <b>Synaps.is APP</b>
       </h5>
     </div>
   </section>
