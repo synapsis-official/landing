@@ -110,7 +110,9 @@ header,
 }
 
 .light-blue-bg {
-  background-color: #f0fffb;
+  /*background-color: #f0fffb;
+  background-color: #00547d;*/
+  background-color: #4991b2;
 }
 .icon-list li i {
   font-size: 1.5rem;

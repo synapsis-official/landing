@@ -63,7 +63,6 @@
       #brain-sync-img {
           width: 280px;
           height: auto;
-          border-radius: 5%;
           max-width: 90%;
           padding-top: 3rem;
       }
@@ -127,7 +126,7 @@
       #features-table h5 {
           padding-top: 1rem;
       }
-      #ready, #collaboration {
+      #ready, #collaboration, #intro-col-right {
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center;
@@ -174,6 +173,9 @@
       @keyframes color-change-intro {
           0% { background-color: rgba(0, 212, 165, 0.15); }
           100% { background-color: rgba(0, 98, 191, 0.15); }
+      }
+      #intro-col-right {
+          background-image: url('img/earth-network.jpg');
       }
   </style>
 </head>
@@ -276,14 +278,15 @@
 
       </div>
 
-      <div class="col col-12 col-lg-6 d-flex light-blue-bg">
-
+      <div id="intro-col-right" class="col col-12 col-lg-6 d-flex light-blue-bg">
+        <h3 class="h3 text-white">
+          Discover other cultures without barriers
+        </h3>
       </div>
 
     </div>
   </section>
   <!--Section: Intro-->
-
 
   <!--Section: Collaboration-->
   <section id="collaboration" style="padding-top: 5rem; padding-bottom: 4rem;">
@@ -296,7 +299,6 @@
   </section>
   <!--Section: Collaboration-->
 
-
   <!--Section: Stay Connected-->
   <section id="stay-connected" class="section-secondary" style="padding-top: 5rem; padding-bottom: 4rem;">
     <div class="col-center row">
@@ -307,8 +309,8 @@
 
       <div class="col col-12 col-md-6 d-flex">
         <div class="m-auto">
-          <h3 class="h2 syis-dark-text my-3">Don't miss the launch of Synaps.is !</h3>
-          <h5>Stay connected</h5>
+          <h3 class="h2 syis-dark-text my-3">Don't miss the launch of Synaps.is</h3>
+          <h5>Stay connected to know </h5>
 
           <!--Grid row-->
           <div class="row wow fadeIn">
@@ -340,8 +342,9 @@
     </div>
 
   </section>
-  <!--Section: Use Case-->
+  <!--Section: Stay Connected-->
 
+  <!-- Why -->
   <section style="padding-bottom: 5rem;">
     <div class="container" style="padding-top: 5rem;">
       <h2 class="h2 mb-5 text-center">Why Synaps.is</h2>
@@ -398,6 +401,7 @@
       </table>
     </div>
   </section>
+  <!-- Why -->
 
   <!--Section: Ready ?-->
   <section id="ready" class="section-secondary">
