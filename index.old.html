@@ -7,13 +7,13 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Synaps.is</title>
 
-  <meta name="description" content="Connect with people, based on your needs and interests">
+  <meta name="description" content="Find people to chat, based on your interests or needs">
   <meta name="author" content="Fabrizio Fubelli">
   <meta name="keywords" content="synapsis, synaps.is, syis, anonymize, search engine, social, privacy, chat, people, security, beta">
 
   <meta property="og:url" content="https://synaps.is">
   <meta property="og:title" content="Synaps.is">
-  <meta property="og:description" content="Connect with people, based on your needs and interests.">
+  <meta property="og:description" content="Find people to chat, based on your interests or needs.">
   <meta property="og:site_name" content="Synaps.is">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en">
@@ -24,7 +24,7 @@
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Synaps.is">
-  <meta name="twitter:description" content="Connect with people, based on your needs and interests.">
+  <meta name="twitter:description" content="Find people to chat, based on your interests or needs.">
   <meta name="twitter:site" content="@synaps_is">
   <meta name="twitter:creator" content="@FFubelli">
   <meta name="twitter:image" content="https://synaps.is/img/logo/blue/syis-logo-share.jpg">
@@ -57,19 +57,19 @@
   <!-- Your custom styles (optional) -->
   <link href="css/style.css" rel="stylesheet">
   <style type="text/css">
-      #img-intro {
-          max-width: 180px;
+      @media (max-width: 640px) {
+          #img-intro {
+              max-width: 30vw;
+          }
       }
-      #brain-sync-img {
-          width: 280px;
-          height: auto;
-          border-radius: 5%;
-          max-width: 90%;
-          padding-top: 3rem;
+      @media (min-width: 641px) {
+          #img-intro {
+              max-width: 180px;
+          }
       }
       #img-example {
-          border-radius: 5%;
           width: 500px;
+          border-radius: 5%;
           max-width: 90%;
       }
       @media (max-width: 991px) {
@@ -103,10 +103,8 @@
           position: absolute;
           bottom: 0;
       }
-      #separator-intro .separator-left, #section-intro .section-left {
-          background-color: white;
-      }
       #separator-intro .separator-left {
+          background: white;
           transform: skewy(14deg);
           transform-origin: bottom left;
           left: 0;
@@ -125,41 +123,13 @@
           color: #797979;
       }
       #features-table h5 {
-          padding-top: 1rem;
-      }
-      #ready, #collaboration {
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-position: center;
+          padding-top: 1.5rem;
       }
       #ready {
           background-image: url('img/neural-network.jpg');
-      }
-      #collaboration {
-          background-image: url('img/collaboration-bg.jpg');
-      }
-      #main-scroll-down {
-          margin-bottom: -6rem;
-          padding-top: 2rem;
-          z-index: 10;
-          animation-name: color_change;
-          animation-duration: 1s;
-          animation-iteration-count: infinite;
-          animation-direction: alternate;
-      }
-      #main-scroll-down-arrow {
-          animation-duration: 1s;
-          animation-iteration-count: infinite;
-          animation-direction: alternate;
-          -webkit-animation: color-change 1s infinite alternate;
-          -moz-animation: color-change 1s infinite alternate;
-          -ms-animation: color-change 1s infinite alternate;
-          -o-animation: color-change 1s infinite alternate;
-          animation: color-change 1s infinite alternate;
-      }
-      @keyframes color-change {
-          0% { color: #00d4a5; }
-          100% { color: #0062bf; }
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
       }
   </style>
 </head>
@@ -213,18 +183,12 @@
 
     <div class="mx-5" style="margin-bottom: 3rem;">
       <!--<h2 class="h1 text-white mb-4">Synaps.is</h2>-->
-      <h1 class="h1"><span class="white-text">Connect with people</span> <span class="syis-text">by your needs and interests</span></h1>
+      <h1 class="h1"><span class="white-text">Find people to chat</span> <span class="syis-text">by your interests or needs</span></h1>
     </div>
 
-    <div class="row py-5" style="margin-bottom: 1rem;">
+    <div class="row" style="margin-bottom: 1rem;">
       <div class="card card-image m-auto" style="border-radius: 50%;">
         <img id="img-intro" class="m-auto" style="max-height: 120vh;" src="img/logo/blue/syis-logo-intro.png" alt="LOGO" title="Synaps.is">
-      </div>
-      <div class="row mx-auto w-100">
-
-      </div>
-      <div id="main-scroll-down" class="mx-auto text-center">
-        <a href="#separator-intro" id="main-scroll-down-arrow"><h1><i class="fas fa-angle-double-down"></i></h1></a>
       </div>
     </div>
 
@@ -239,63 +203,63 @@
 <main id="main">
 
   <!--Section: Intro-->
-  <section id="section-intro" class="position-relative">
+  <section id="section-intro">
 
-    <h2 class="my-4 h2 text-center position-absolute">
-      The first search engine to connect with people by your
-    </h2>
+    <!--
+    <h1 class="my-4 h1 text-center">Synaps.is</h1>
+    -->
 
     <div class="row col-center">
 
-      <div class="col col-12 col-lg-6 section-left">
+      <div class="col col-12 col-lg-6">
+        <h3 class="h3 mb-4 pb-2 syis-dark-text">
+          Synaps.is offers a quickly way to find an available person, to talk about what you want
+        </h3>
 
-        <!--<h2 class="h2 dark-grey-text">Synaps.is</h2>-->
-
-
-
-        <h4>
-        </h4>
-
-        <ul style="list-style-type: decimal">
-          <li>Chose your interests or needs</li>
-          <li>Connect anonymously with the right person</li>
-        </ul>
+        <table id="features-table" class="wow fadeIn">
+          <tbody>
+          <tr>
+            <td class="px-3">
+              <h5><i class="fas fa-search"></i></h5>
+            </td>
+            <td>
+              <h5>Look for your current interests or needs in a <b>search engine</b></h5>
+            </td>
+          </tr>
+          <tr>
+            <td class="px-3">
+              <h5><i class="fas fa-bell"></i></h5>
+            </td>
+            <td>
+              <h5>Synaps.is finds the best person matching your search and temporary connect you with him</h5>
+            </td>
+          </tr>
+          <tr>
+            <td class="px-3">
+              <h5><i class="fas fa-user-secret"></i></h5>
+            </td>
+            <td>
+              <h5>This service if <b>Fully Anonymous</b></h5>
+            </td>
+          </tr>
+          <tr>
+            <td class="px-3">
+              <h5><i class="fas fa-shield-alt"></i></h5>
+            </td>
+            <td>
+              <h5>An <b>Artificial Intelligence</b> monitors the chats, to intercept scams and dangers</h5>
+            </td>
+          </tr>
+          </tbody>
+        </table>
 
       </div>
 
-      <div class="col col-12 col-lg-6 d-flex light-blue-bg">
-
-      </div>
-
-    </div>
-  </section>
-  <!--Section: Intro-->
-
-
-  <!--Section: Collaboration-->
-  <section id="collaboration" style="padding-top: 5rem; padding-bottom: 4rem;">
-    <div class="row mx-5 d-flex">
-      <h1 class="h1 m-auto azure-text text-center">Simple online collaboration</h1>
-    </div>
-    <div class="row mx-5 d-flex">
-      <img id="brain-sync-img" class="m-auto" src="img/brain-sync.png" alt="Brain Synchronization" title="Brain Synchronization">
-    </div>
-  </section>
-  <!--Section: Collaboration-->
-
-
-  <!--Section: Stay Connected-->
-  <section id="stay-connected" class="section-secondary" style="padding-top: 5rem; padding-bottom: 4rem;">
-    <div class="col-center row">
-
-      <div class="col col-12 col-md-6 d-flex">
-        <img class="mr-auto my-auto" id="synapse-example" src="img/synapse-example.jpg" alt="Synapse UX" style="max-width: 80%;">
-      </div>
-
-      <div class="col col-12 col-md-6 d-flex">
+      <div id="stay-connected" class="col col-12 col-lg-6 d-flex light-blue-bg">
         <div class="m-auto">
-          <h3 class="h2 syis-dark-text my-3">Don't miss the launch of synaps.is !</h3>
-          <h5>Stay connected</h5>
+          <h3 class="h3 my-3">STAY CONNECTED</h3>
+          <h5>We'll warn you about the first release.</h5>
+          <h5>Than, you can become a <b>beta tester</b> by trying our application.</h5>
 
           <!--Grid row-->
           <div class="row wow fadeIn">
@@ -322,12 +286,124 @@
           </div>
           <!--/Grid row-->
         </div>
+
       </div>
 
     </div>
+  </section>
+  <!--Section: Intro-->
+
+
+  <!--Section: How it works-->
+  <section id="how-it-works" class="section-secondary" style="padding-top: 5rem; padding-bottom: 4rem;">
+
+    <!--Grid row-->
+    <div class="row col-center" style="margin: 0 !important;">
+
+      <!--Grid column-->
+      <div class="col-12 col-lg-7 mb-4 wow fadeIn">
+        <h2 class="h2 text-center">How it works</h2>
+
+        <!-- Vertical Steppers -->
+        <div class="row mt-1 d-flex">
+
+          <div class="m-auto">
+            <!-- Steppers Wrapper -->
+            <ul class="stepper stepper-vertical">
+
+              <!-- First Step -->
+              <li class="completed">
+                <a>
+                  <span class="circle">1</span>
+                  <span class="label">Search interests or needs</span>
+                </a>
+
+                <!-- Section Description -->
+                <div class="step-content p-0">
+                  <p>
+                    A simple search engine allows you to search for interests or needs
+                  </p>
+                </div>
+              </li>
+
+              <!-- Second Step -->
+              <li class="completed">
+
+                <!--Section Title -->
+                <a>
+                  <span class="circle">2</span>
+                  <span class="label">Chat</span>
+                </a>
+
+                <!-- Section Description -->
+                <div class="step-content p-0">
+                  <p>
+                    The best suited and available person gets temporary connected with you.
+                    This process is called <b>"Synapse"</b>
+                  </p>
+                </div>
+              </li>
+
+            </ul>
+            <!-- /.Steppers Wrapper -->
+
+            <h5 class="px-4">
+              Or...
+            </h5>
+
+            <!-- Steppers Wrapper -->
+            <ul class="stepper stepper-vertical">
+
+              <!-- First Step -->
+              <li class="completed">
+                <a>
+                  <span class="circle">1</span>
+                  <span class="label">Click on notification</span>
+                </a>
+
+                <!-- Section Description -->
+                <div class="step-content p-0">
+                  <p>
+                    You could receive notifications to chat about your interests with someone
+                  </p>
+                </div>
+              </li>
+
+              <!-- Second Step -->
+              <li class="completed">
+
+                <!--Section Title -->
+                <a>
+                  <span class="circle">2</span>
+                  <span class="label">Chat</span>
+                </a>
+
+                <!-- Section Description -->
+                <div class="step-content p-0">
+                  <p>
+                    A person who wants to speak about your interests gets temporary connected with you
+                  </p>
+                </div>
+              </li>
+
+            </ul>
+            <!-- /.Steppers Wrapper -->
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-5 mb-4 text-center d-flex wow fadeIn">
+        <img id="img-example" alt="EXAMPLE" src="img/2-syis-example.gif" title="Example" class="img-fluid m-auto">
+      </div>
+      <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
 
   </section>
-  <!--Section: Use Case-->
+  <!--Section: Explanation-->
 
   <section style="padding-bottom: 5rem;">
     <div class="container" style="padding-top: 5rem;">
@@ -340,49 +416,10 @@
           <h5>You can't disturb anyone, because the contacted people must accept your synapse</h5>
         </li>
         <li>
-          <h5>If you don't send your personal data during a synapse,
+          <h5>It is fully anonymous, so, if you don't send your personal data during a synapse,
             no one will know who you are</h5>
         </li>
       </ul>
-
-      <table id="features-table" class="wow fadeIn">
-        <tbody>
-        <!--
-        <tr>
-          <td class="px-3">
-            <h5><i class="fas fa-search"></i></h5>
-          </td>
-          <td>
-            <h5>Look for your current needs or interests in a <b>search engine</b></h5>
-          </td>
-        </tr>
-        <tr>
-          <td class="px-3">
-            <h5><i class="fas fa-bell"></i></h5>
-          </td>
-          <td>
-            <h5>Synaps.is finds the best person matching your search and temporary connect you with him</h5>
-          </td>
-        </tr>
-        -->
-        <tr>
-          <td class="px-3">
-            <h5><i class="fas fa-user-secret"></i></h5>
-          </td>
-          <td>
-            <h5>This service if <b>Fully Anonymous</b></h5>
-          </td>
-        </tr>
-        <tr>
-          <td class="px-3">
-            <h5><i class="fas fa-shield-alt"></i></h5>
-          </td>
-          <td>
-            <h5>An <b>Artificial Intelligence</b> monitors the chats, to intercept scams and dangers</h5>
-          </td>
-        </tr>
-        </tbody>
-      </table>
     </div>
   </section>
 
@@ -391,8 +428,7 @@
     <div class="mask rgba-black" style="padding-top: 5rem; padding-bottom: 5rem;">
       <h2 class="h1 text-center syis-text">Become the first</h2>
       <h5 class="text-center mt-5 px-4 white-text">
-        <a href="#stay-connected" class="syis-text"><b>Stay connected</b></a>
-        to be notified at Synaps.is launch
+        <a href="#stay-connected" class="syis-text"><b>Stay connected</b></a> to receive the <b>beta</b> version of <b>Synaps.is APP</b>
       </h5>
     </div>
   </section>
@@ -453,17 +489,6 @@
 <script type="text/javascript">
   // Animations initialization
   new WOW().init();
-  $(function() {
-    $('a[href]').click(function(e) {
-      const target = $(this).attr('href');
-      if (target && target[0] === '#' && target.length > 1) {
-        e.preventDefault();
-        $([document.documentElement, document.body]).animate({
-          scrollTop: $(target).offset().top
-        }, 500);
-      }
-    });
-  });
 </script>
 </body>
 
