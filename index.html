@@ -158,8 +158,22 @@
           animation: color-change 1s infinite alternate;
       }
       @keyframes color-change {
-          0% { color: #00d4a5; }
-          100% { color: #0062bf; }
+          0% { color: rgba(0, 212, 165, 0.7); }
+          100% { color: rgba(0, 98, 191, 0.7); }
+      }
+      #img-intro-container {
+          animation-duration: 1s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          -webkit-animation: color-change-intro 1s infinite alternate;
+          -moz-animation: color-change-intro 1s infinite alternate;
+          -ms-animation: color-change-intro 1s infinite alternate;
+          -o-animation: color-change-intro 1s infinite alternate;
+          animation: color-change-intro 1s infinite alternate;
+      }
+      @keyframes color-change-intro {
+          0% { background-color: rgba(0, 212, 165, 0.15); }
+          100% { background-color: rgba(0, 98, 191, 0.15); }
       }
   </style>
 </head>
@@ -217,7 +231,7 @@
     </div>
 
     <div class="row py-5" style="margin-bottom: 1rem;">
-      <div class="card card-image m-auto" style="border-radius: 50%;">
+      <div id="img-intro-container" class="card m-auto" style="border-radius: 50%;">
         <img id="img-intro" class="m-auto" style="max-height: 120vh;" src="img/logo/blue/syis-logo-intro.png" alt="LOGO" title="Synaps.is">
       </div>
       <div class="row mx-auto w-100">
@@ -251,15 +265,14 @@
 
         <!--<h2 class="h2 dark-grey-text">Synaps.is</h2>-->
 
-
-
-        <h4>
+        <h4 class="dark-grey-text d-flex mb-4">
+          <span class="badge badge-pill badge-syis-dark my-auto">1</span>
+          <span class="ml-4">Chose your interests or needs</span>
         </h4>
-
-        <ul style="list-style-type: decimal">
-          <li>Chose your interests or needs</li>
-          <li>Connect anonymously with the right person</li>
-        </ul>
+        <h4 class="dark-grey-text d-flex">
+          <span class="badge badge-pill badge-syis-dark my-auto">2</span>
+          <span class="ml-4">Connect anonymously with the right person</span>
+        </h4>
 
       </div>
 
@@ -294,7 +307,7 @@
 
       <div class="col col-12 col-md-6 d-flex">
         <div class="m-auto">
-          <h3 class="h2 syis-dark-text my-3">Don't miss the launch of synaps.is !</h3>
+          <h3 class="h2 syis-dark-text my-3">Don't miss the launch of Synaps.is !</h3>
           <h5>Stay connected</h5>
 
           <!--Grid row-->
@@ -449,22 +462,9 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="js/mdb.min.js"></script>
-<!-- Initializations -->
-<script type="text/javascript">
-  // Animations initialization
-  new WOW().init();
-  $(function() {
-    $('a[href]').click(function(e) {
-      const target = $(this).attr('href');
-      if (target && target[0] === '#' && target.length > 1) {
-        e.preventDefault();
-        $([document.documentElement, document.body]).animate({
-          scrollTop: $(target).offset().top
-        }, 500);
-      }
-    });
-  });
-</script>
+<!-- Custom JavaScript -->
+<script type="text/javascript" src="js/script.js"></script>
+
 </body>
 
 </html>

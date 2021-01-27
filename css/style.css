@@ -164,3 +164,11 @@ section.section-secondary {
 .azure-text {
   color: #b3dcff;
 }
+
+.badge-syis {
+  background-color: #00ffe8;
+}
+
+.badge-syis-dark {
+  background-color: #0064c0;
+}
