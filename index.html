@@ -75,8 +75,8 @@
           padding-top: 3rem;
       }
       #img-example {
-          width: 500px;
           border-radius: 5%;
+          width: 500px;
           max-width: 90%;
       }
       @media (max-width: 991px) {
@@ -110,8 +110,10 @@
           position: absolute;
           bottom: 0;
       }
+      #separator-intro .separator-left, #section-intro .section-left {
+          background-color: #c8c8c8;
+      }
       #separator-intro .separator-left {
-          background: white;
           transform: skewy(14deg);
           transform-origin: bottom left;
           left: 0;
@@ -195,7 +197,7 @@
 
     <div class="mx-5" style="margin-bottom: 3rem;">
       <!--<h2 class="h1 text-white mb-4">Synaps.is</h2>-->
-      <h1 class="h1"><span class="white-text">Find people to chat</span> <span class="syis-text">by your needs and interests</span></h1>
+      <h1 class="h1"><span class="white-text">Find people to chat</span> <span class="syis-text">by your needs or interests</span></h1>
     </div>
 
     <div class="row" style="margin-bottom: 1rem;">
@@ -223,10 +225,17 @@
 
     <div class="row col-center">
 
-      <div class="col col-12 col-lg-6">
-        <h3 class="h3 mb-4 pb-2 syis-dark-text">
-          Synaps.is offers a quickly way to find an available person, to talk about what you want
-        </h3>
+      <div class="col col-12 col-lg-6 section-left">
+
+        <!--<h2 class="h2 dark-grey-text">Synaps.is</h2>-->
+
+        <h2 class="h2 mb-4 pb-2 black-text">
+          Temporarily connect with the right person!
+        </h2>
+
+        <div class="row d-flex">
+          <img class="mr-auto my-auto" id="synapse-example" src="img/synapse-example.jpg" alt="Synapse UX" style="max-width: 80%;">
+        </div>
 
         <table id="features-table" class="wow fadeIn">
           <tbody>
@@ -271,7 +280,6 @@
         <div class="m-auto">
           <h3 class="h3 my-3">STAY CONNECTED</h3>
           <h5>We'll warn you about the first release.</h5>
-          <h5>Than, you can become a <b>beta tester</b> by trying our application.</h5>
 
           <!--Grid row-->
           <div class="row wow fadeIn">
