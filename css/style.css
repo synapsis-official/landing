@@ -203,10 +203,41 @@ section.section-secondary {
   padding: 0.6rem 1rem !important;
 }
 
-#error-toast {
-  background-color: #ffe9eb !important;
+#error-toast .toast-content {
+  background-color: #fff0f2 !important;
+}
+#success-toast .toast-content {
+  background-color: #e9fff1 !important;
 }
 
 .toast {
-  background-color: white;
+  background-color: transparent;
+}
+
+#loader {
+  background-color: rgba(229, 229, 229, 0.65);
+}
+.toast .toast {
+  opacity: 1 !important;
+}
+
+.toast .toast-content {
+  max-width: 65vw;
+}
+
+.toast-footer button {
+  color: #4a4a4a;
+  opacity: 1;
+}
+
+#loader.show {
+  z-index: 99 !important;
+}
+
+.toast .toast-body {
+  font-size: larger;
+}
+
+.toast .toast-footer button {
+  margin: .75rem;
 }
