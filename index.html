@@ -66,11 +66,13 @@
           max-width: 90%;
           padding-top: 3rem;
       }
+      /*
       #img-example {
           border-radius: 5%;
           width: 500px;
           max-width: 90%;
       }
+       */
       @media (max-width: 991px) {
           #section-intro .col {
               padding-bottom: 2.5rem;
@@ -206,7 +208,7 @@
   </style>
 </head>
 
-<body>
+<body style="position: relative;">
 
 <!-- Navbar -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
@@ -424,8 +426,20 @@
             <a href="privacy" title="Privacy Policy of Synaps.is" target="_blank">Privacy Policy</a>
           </p>
 
-          <!-- Sign in button -->
-          <button class="btn btn-info btn-block mt-4" type="submit">LET ME KNOW</button>
+          <!-- Submit button -->
+          <button id="stay-connected-submit"
+                  type="submit"
+                  class="btn btn-info btn-block mt-4">
+            LET ME KNOW
+          </button>
+
+          <!-- Submit button -->
+          <button id="stay-connected-captcha"
+                  class="g-recaptcha"
+                  data-sitekey="6LdZikIaAAAAAOcIihnxov8KsIq6fFDsApy6HIXj"
+                  data-callback='onStayConnectedSubmit'
+                  style="height: 0; width: 0; visibility: hidden;">
+          </button>
 
         </form>
       </div>
@@ -551,6 +565,30 @@
 </footer>
 <!--/.Footer-->
 
+<!--Error Toast-->
+<div id="error-toast" class="toast d-flex position-fixed" data-autohide="false">
+  <div class="toast-content" data-autohide="false">
+    <div class="toast-header">
+      <svg class="rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+           focusable="false" role="img">
+        <rect fill="#007aff" width="100%" height="100%" /></svg>
+      <strong class="mr-auto toast-title">Bootstrap</strong>
+      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+    <div class="toast-footer">
+      <button type="button" class="btn btn-light close" data-dismiss="toast" aria-label="Close">
+        <span>Close</span>
+      </button>
+    </div>
+  </div>
+</div>
+<!--/.Error Toast-->
+
 <!-- SCRIPTS -->
 <!-- JQuery -->
 <script
@@ -566,6 +604,49 @@
 <script type="text/javascript" src="js/mdb.min.js"></script>
 <!-- Custom JavaScript -->
 <script type="text/javascript" src="js/script.js"></script>
+<!-- Google reCAPTCHA -->
+<script src="https://www.google.com/recaptcha/api.js"></script>
+
+<script>
+  $(function() {
+    const $stayConnectedSubmitCaptcha = $('#stay-connected-captcha');
+    const $stayConnectedForm = $('#stay-connected-form');
+    $stayConnectedForm.submit(function() {
+      $stayConnectedSubmitCaptcha.click();
+      return false;
+    });
+  });
+
+  // noinspection JSUnusedGlobalSymbols
+  function onStayConnectedSubmit() {
+    const $stayConnectedForm = $('#stay-connected-form');
+    const $errorToast = $('#error-toast');
+    $.ajax({
+      url: 'https://local-cloud-synaps.is/contact/v1/api/stay-connected',
+      type: "post",
+      data: $stayConnectedForm.serialize(),
+      success: function(data) {
+        console.log('success', data);
+        $errorToast.find('.toast-title').content(data.title);
+        $errorToast.find('.toast-body').content(data.message);
+        $errorToast.toast();
+      },
+      error: function(data) {
+        console.log('error', data.responseJSON);
+        const errors = Object.values(data.responseJSON.errors);
+        let htmlBody = '<ul>';
+        for (let i = 0; i < errors.length; i++){
+          const element = errors[i];
+          htmlBody += `<li>${element}</li>`;
+        }
+        htmlBody += '</ul>';
+        $errorToast.find('.toast-title').html(data.responseJSON.message);
+        $errorToast.find('.toast-body').html(htmlBody);
+        $errorToast.toast('show');
+      }
+    })
+  }
+</script>
 
 </body>
 
