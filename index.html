@@ -642,7 +642,6 @@
   $(function() {
     const $stayConnectedSubmitCaptcha = $('#stay-connected-captcha');
     const $stayConnectedForm = $('#stay-connected-form');
-    const $errorToast = $('#error-toast');
 
     $('.toast').find('.close').click(function() {
       $('#loader').toast('hide');
@@ -670,13 +669,22 @@
         $successToast.toast('show');
       },
       error: function(data) {
-        const errors = Object.values(data.responseJSON.errors);
-        let htmlBody = '';
-        for (let i = 0; i < errors.length; i++){
-          const element = errors[i];
-          htmlBody += `<p>${element}</p>`;
+        let htmlTitle;
+        let htmlBody;
+        if (data.responseJSON) {
+          htmlTitle = data.responseJSON.message;
+          htmlBody = ''
+          const errors = Object.values(data.responseJSON.errors);
+          for (let i = 0; i < errors.length; i++){
+            const element = errors[i];
+            htmlBody += `<p>${element}</p>`;
+          }
+        } else {
+          htmlTitle = 'Error';
+          htmlBody = '<p>Sorry, an error occurred.</p>'
         }
-        $errorToast.find('.toast-title').html(data.responseJSON.message);
+
+        $errorToast.find('.toast-title').html(htmlTitle);
         $errorToast.find('.toast-body').html(htmlBody);
         $errorToast.toast('show');
       }
