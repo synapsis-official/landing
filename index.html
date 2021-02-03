@@ -189,6 +189,9 @@
           100% { color: rgba(0, 98, 191, 0.7); }
       }
       #img-intro-container {
+          position: inherit;
+          z-index: 3;
+          border-radius: 50%;
           animation-duration: 1s;
           animation-iteration-count: infinite;
           animation-direction: alternate;
@@ -261,15 +264,20 @@
     </div>
 
     <div class="row py-5" style="margin-bottom: 1rem;">
-      <div id="img-intro-container" class="card m-auto" style="border-radius: 50%;">
-        <img id="img-intro" class="m-auto" style="max-height: 120vh;" src="img/logo/blue/syis-logo-intro.png" alt="LOGO" title="Synaps.is">
-      </div>
-      <div class="row mx-auto w-100">
 
-      </div>
+      <a href="#separator-intro" id="img-intro-container" class="card m-auto">
+        <div>
+          <img id="img-intro" class="m-auto" style="max-height: 120vh;" src="img/logo/blue/syis-logo-intro.png"
+               alt="LOGO" title="Synaps.is">
+        </div>
+      </a>
+
+      <div class="row mx-auto w-100"></div>
+
       <div id="main-scroll-down" class="mx-auto text-center">
         <a href="#separator-intro" id="main-scroll-down-arrow"><h1><i class="fas fa-angle-double-down"></i></h1></a>
       </div>
+
     </div>
 
     <div id="separator-intro">
