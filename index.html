@@ -7,13 +7,13 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Synaps.is</title>
 
-  <meta name="description" content="Connect with people, based on your needs and interests">
+  <meta name="description" content="Communicate your needs, share your interests.">
   <meta name="author" content="Fabrizio Fubelli">
-  <meta name="keywords" content="synapsis, synaps.is, syis, anonymize, search engine, social, privacy, chat, people, security, beta">
+  <meta name="keywords" content="synapsis, synaps.is, syis, anonymize, search engine, communication, privacy, chat, people, security, beta">
 
   <meta property="og:url" content="https://synaps.is">
   <meta property="og:title" content="Synaps.is">
-  <meta property="og:description" content="Connect with people, based on your needs and interests.">
+  <meta property="og:description" content="Communicate your needs, share your interests.">
   <meta property="og:site_name" content="Synaps.is">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en">
@@ -24,7 +24,7 @@
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Synaps.is">
-  <meta name="twitter:description" content="Connect with people, based on your needs and interests.">
+  <meta name="twitter:description" content="Communicate your needs, share your interests.">
   <meta name="twitter:site" content="@synaps_is">
   <meta name="twitter:creator" content="@FFubelli">
   <meta name="twitter:image" content="https://synaps.is/img/logo/blue/syis-logo-share.jpg">
@@ -57,9 +57,6 @@
   <!-- Your custom styles (optional) -->
   <link href="css/style.css" rel="stylesheet">
   <style type="text/css">
-      #img-intro {
-          max-width: 180px;
-      }
       #brain-sync-img {
           width: 280px;
           height: auto;
@@ -84,11 +81,27 @@
           #separator-after .separator-left, #separator-after .separator-right {
               background-color: #4991b2 !important;
           }
+          #main-scroll-down {
+              margin-bottom: -4rem;
+          }
       }
       @media (min-width: 992px) {
           #section-intro .col {
               padding-bottom: 5rem;
               padding-top: 0;
+          }
+          #main-scroll-down {
+              margin-bottom: -3rem;
+          }
+      }
+      @media (max-width: 500px) {
+          #img-intro {
+              max-width: 90vw;
+          }
+      }
+      @media (min-width: 521px) {
+          #img-intro {
+              max-width: 500px;
           }
       }
       #intro {
@@ -166,7 +179,6 @@
           background-image: url('img/discover.jpg');
       }
       #main-scroll-down {
-          margin-bottom: -6rem;
           padding-top: 2rem;
           z-index: 10;
           animation-name: color_change;
@@ -189,6 +201,9 @@
           100% { color: rgba(0, 98, 191, 0.7); }
       }
       #img-intro-container {
+          position: inherit;
+          z-index: 3;
+          /*
           animation-duration: 1s;
           animation-iteration-count: infinite;
           animation-direction: alternate;
@@ -197,11 +212,13 @@
           -ms-animation: color-change-intro 1s infinite alternate;
           -o-animation: color-change-intro 1s infinite alternate;
           animation: color-change-intro 1s infinite alternate;
+          */
       }
+      /*
       @keyframes color-change-intro {
           0% { background-color: rgba(0, 212, 165, 0.15); }
           100% { background-color: rgba(0, 98, 191, 0.15); }
-      }
+      }*/
       #intro-col-right {
           /*background-image: url('img/earth-network.jpg');*/
       }
@@ -257,19 +274,24 @@
 
     <div class="mx-5" style="margin-bottom: 3rem;">
       <!--<h2 class="h1 text-white mb-4">Synaps.is</h2>-->
-      <h1 class="h1"><span class="white-text">Connect with people</span> <span class="syis-text">by your needs and interests</span></h1>
+      <h1 class="h1"><span class="syis-text">Search Engine</span> <span class="white-text">to communicate with people</span></h1>
     </div>
 
-    <div class="row py-5" style="margin-bottom: 1rem;">
-      <div id="img-intro-container" class="card m-auto" style="border-radius: 50%;">
-        <img id="img-intro" class="m-auto" style="max-height: 120vh;" src="img/logo/blue/syis-logo-intro.png" alt="LOGO" title="Synaps.is">
-      </div>
-      <div class="row mx-auto w-100">
+    <div class="row py-3" style="margin-bottom: 1rem;">
 
+      <div id="img-intro-container" class="m-auto">
+        <img id="img-intro" class="m-auto" style="max-height: 120vh;"
+             src="img/syis.png" alt="PREVIEW" title="Preview"
+        >
+        <!--src="img/logo/blue/syis-logo-intro.png" alt="LOGO" title="Synaps.is"-->
       </div>
+
+      <div class="row mx-auto w-100"></div>
+
       <div id="main-scroll-down" class="mx-auto text-center">
         <a href="#separator-intro" id="main-scroll-down-arrow"><h1><i class="fas fa-angle-double-down"></i></h1></a>
       </div>
+
     </div>
 
     <div id="separator-intro">
@@ -313,9 +335,9 @@
 
       <div id="intro-col-right" class="bg-center col col-12 col-lg-6 d-flex light-blue-bg d-flex">
         <div class="m-auto d-block">
-          <h3 class="h3 text-white">
-            The new search engine to connect with people by your interests.
-          </h3>
+          <h2 class="h2 text-white">
+            Communicate your needs, share your interests.
+          </h2>
         </div>
       </div>
 
@@ -333,7 +355,7 @@
       <h1 class="h1 m-auto azure-text text-center">Simple online collaboration</h1>
     </div>
     <div class="row mx-5 d-flex">
-      <img id="brain-sync-img" class="m-auto" src="img/brain-sync.png" alt="Brain Synchronization" title="Brain Synchronization">
+      <img id="brain-sync-img" class="m-auto" src="img/brain-sync-pretty.png" alt="Brain Synchronization" title="Brain Synchronization">
     </div>
   </section>
   <!--Section: Collaboration-->
@@ -357,7 +379,7 @@
           </tr>
           <tr class="h1 dark-grey-text">
             <td class="px-3">
-              <h3><i class="fas fa-glass-cheers"></i></h3>
+              <h3><i class="fas fa-hands-helping"></i></h3>
             </td>
             <td>
               <h3 class="text-left h3">
@@ -385,14 +407,14 @@
          padding-top: 10rem;
          padding-bottom: 9rem;"
     >
-      <h3 class="h1 m-auto dark-grey-text px-5 py-5"
+      <h3 class="h1 m-auto dark-grey-text px-5 py-5 text-center"
           style="background-color: rgba(255, 255, 255, 0.59);
           border-radius: 50%;
           color: #323273 !important;"
       >
-        Nobody knows everything,
+        Nobody knows everything
         <br/>
-        together we know a lot
+        Together we know a lot
       </h3>
     </div>
   </section>
@@ -459,8 +481,7 @@
           <h5>You can't disturb anyone, because the contacted people must accept your synapse</h5>
         </li>
         <li>
-          <h5>If you don't send your personal data during a synapse,
-            no one will know who you are</h5>
+          <h5>Your personal data will never be shared publicly</h5>
         </li>
       </ul>
 
@@ -517,7 +538,7 @@
   <!--Section: Ready ?-->
   <section id="ready" class="bg-center section-secondary">
     <div class="mask rgba-black" style="padding-top: 5rem; padding-bottom: 5rem;">
-      <h2 class="h1 text-center syis-text">Become the first</h2>
+      <h2 class="h1 text-center syis-text">Become the First</h2>
       <h5 class="text-center mt-5 px-4 white-text">
         <a href="#stay-connected" class="syis-text"><b>Stay connected</b></a>
         to be notified at Synaps.is launch
@@ -642,7 +663,6 @@
   $(function() {
     const $stayConnectedSubmitCaptcha = $('#stay-connected-captcha');
     const $stayConnectedForm = $('#stay-connected-form');
-    const $errorToast = $('#error-toast');
 
     $('.toast').find('.close').click(function() {
       $('#loader').toast('hide');
@@ -670,13 +690,22 @@
         $successToast.toast('show');
       },
       error: function(data) {
-        const errors = Object.values(data.responseJSON.errors);
-        let htmlBody = '';
-        for (let i = 0; i < errors.length; i++){
-          const element = errors[i];
-          htmlBody += `<p>${element}</p>`;
+        let htmlTitle;
+        let htmlBody;
+        if (data.responseJSON) {
+          htmlTitle = data.responseJSON.message;
+          htmlBody = ''
+          const errors = Object.values(data.responseJSON.errors);
+          for (let i = 0; i < errors.length; i++){
+            const element = errors[i];
+            htmlBody += `<p>${element}</p>`;
+          }
+        } else {
+          htmlTitle = 'Error';
+          htmlBody = '<p>Sorry, an error occurred.</p>'
         }
-        $errorToast.find('.toast-title').html(data.responseJSON.message);
+
+        $errorToast.find('.toast-title').html(htmlTitle);
         $errorToast.find('.toast-body').html(htmlBody);
         $errorToast.toast('show');
       }
