@@ -681,7 +681,7 @@
     const $errorToast = $('#error-toast');
     const $successToast = $('#success-toast');
     $.ajax({
-      url: 'https://n1-api.synaps.is/contact/stay-connected',
+      url: 'https://cloud.synaps.is/api/contact/stay-connected',
       type: "post",
       data: $stayConnectedForm.serialize(),
       success: function(data) {
