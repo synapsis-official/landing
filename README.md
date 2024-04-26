@@ -1,4 +1,4 @@
-# Synaps.is Landing Page
+# Synapsis Landing Page
 
-- URL: [https://synaps.is](https://synaps.is)
+- URL: [https://syis.eu](https://syis.eu)
 - Deploy: `git push origin main`
